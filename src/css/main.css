@@ -132,3 +132,63 @@ margin-right: auto;
     padding-right: 176px;
  }
 }
+/* Features */
+.features-container{
+    background-image: url("/img/features/mob.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+width: 343px;
+    height: 576px;
+        padding: 40px 16px; 
+}
+
+.features-wrapper{
+        border-radius: 32px;
+        padding: 40px 24px;
+        width: 311px;
+        height: 496px;
+box-shadow: 8px 8px 16px 0 rgba(167, 167, 167, 0.16);
+    background: #08b78c;
+}
+.features-title{
+    color: #fff;
+}
+.features-subtitle{
+color: #fff;
+}
+.features-list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #fff;
+}
+.features-item{
+    display: flex;
+    align-items: start;
+    gap: 8px;
+}
+.features-item p{
+    width: 225px;
+}
+@media only screen and (min-width: 1440px) {
+  .features-container{
+    background-image: url("/img/features/desk.png");
+width: 1088px;
+    height: 691px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 48px;
+  }
+  .features-wrapper{
+    width: 480px;
+        height: 563px;
+        padding: 40px;
+  }
+  .features-item p {
+      width: 362px;
+  }
+  .features-subtitle{
+    margin-bottom: 32px;
+  }
+}
