@@ -1,0 +1,63 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+.home-section{
+    background-image: url("/img/home/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 812px;
+}
+.home-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+.hero-text{
+    margin-top: 10px;
+    font-weight: 700;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #06193a;
+}
+.home-link{
+    margin-top: 32px;
+    border-radius: 50px;
+        padding: 12px 20px;
+        width: 343px;
+        height: 65px;
+background: linear-gradient(180deg, #ff9500 0%, #c87227 100%);
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+transition: background 0.3s ease-in-out;
+}
+.home-link:hover{
+    background: linear-gradient(180deg, #f78706 0%, #b65801 100%);
+}
+@media only screen and (min-width: 1440px) {
+   .home-section{
+    background-image: url("/img/home/desk.png");
+   }
+   .home-wrapper{
+    margin-top: 40px;
+   }
+   .hero-text{
+    font-size: 24px;
+   }
+   .home-link{
+    width: 240px;
+        height: 65px;
+   }
+}
