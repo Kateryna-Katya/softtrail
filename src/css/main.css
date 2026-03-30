@@ -61,3 +61,46 @@ transition: background 0.3s ease-in-out;
         height: 65px;
    }
 }
+/* Back */
+.back{
+    background-image: url("/img/back/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+@media only screen and (min-width: 1440px) {
+    .back{
+        background-image: url("/img/back/desk.png");
+    }
+}
+/* About the Game */
+.about-container{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+@media only screen and (min-width: 1440px) {
+   .about-container{
+    padding-top: 120px;
+    gap: 64px;
+   }
+   .about-wrapper{
+    width: 1088px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+   }
+   .about-title-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 528px;
+   }
+   .about-subtitle{
+    margin-bottom: 0;
+   }
+   .about-text-wrapper{
+    width: 528px;
+   }
+}
